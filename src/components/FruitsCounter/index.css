@@ -1,1 +1,60 @@
 /* Write your CSS here */
+* {
+  font-family: 'roboto';
+}
+
+.count {
+  color: #ffd569;
+}
+.imgStyle {
+  width: 60%;
+}
+.cardStyle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+.button {
+  background-color: #007bff;
+  color: #ffffff;
+  border-style: none;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  margin: 15px;
+}
+@media (max-width: 767px) {
+  .bgContainer {
+    height: 100vh;
+    border-style: solid;
+    border-width: 10px;
+    border-color: #ffd569;
+    text-align: center;
+  }
+  .heading {
+    font-size: 25px;
+  }
+  .arrange {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 768px) {
+  .bgContainer {
+    height: 100vh;
+    border-style: solid;
+    border-width: 40px;
+    border-color: #ffd569;
+    text-align: center;
+    overflow-y: scroll;
+  }
+  .heading {
+    font-size: 45px;
+  }
+  .arrange {
+    display: flex;
+    flex-direction: row;
+  }
+}
